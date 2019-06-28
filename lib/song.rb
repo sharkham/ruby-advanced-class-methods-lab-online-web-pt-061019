@@ -81,4 +81,8 @@ class Song
   def self.create_from_filename(filename)
     self.all << self.new_from_filename(filename)
   end
+
+  def self.destroy_all
+    self.all.clear
+  end 
 end
